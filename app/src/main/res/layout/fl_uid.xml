@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fl_uid"
+    android:background="@color/dark_gray2"
+    tools:context=".fl_uid">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/db_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:text="⚙️ 내 설정" />
+            <TextView
+                android:id="@+id/db_avg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/stat1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardElevation="20dp"
+                app:cardBackgroundColor="#a3000000"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="25sp"
+                    android:text="💁 나의 프로필"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:text="@string/sex"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/sex_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="20dp"
+                        android:text="@string/male"
+                        android:textSize="20sp"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:textColor="@color/white" />
+                </LinearLayout> <!--성별-->
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:text="@string/birt"
+                            android:textSize="20sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/birt_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="20dp"
+                            android:text="1998-12-07"
+                            android:textSize="20sp"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:textColor="@color/white" />
+                </LinearLayout> <!--이름-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:textSize="25sp"
+                            android:text="🥱 수면 정보"
+                            android:textColor="@color/white" />
+
+                        <ToggleButton
+                            android:id="@+id/alram_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:text="수면 준비시간"
+                            android:textSize="20sp"
+                            android:layout_weight="1"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/go_to_bed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingRight="20dp"
+                            android:text="오전 1시 00분"
+                            android:textSize="20sp"
+                            android:layout_weight="3"
+                            android:gravity="right"
+                            android:textColor="@color/white" />
+                    </LinearLayout> <!--수면 준비시간-->
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/stat2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardElevation="20dp"
+                app:cardBackgroundColor="#a3000000"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textSize="25sp"
+                        android:text="🧑‍💻 만든 사람"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:text="@string/develop_uid"
+                        android:textSize="18sp"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:text="@string/develop_name"
+                        android:textSize="18sp"
+                        android:textColor="@color/white" />
+
+
+                    </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

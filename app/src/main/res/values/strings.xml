@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">sleepcycle</string>
+    <string name="name">이름</string>
+    <string name="sex">성별</string>
+    <string name="male">남자</string>
+    <string name="female">여자</string>
+    <string name="birt">생일</string>
+    <string name="develop_uid">학번 : 20171050</string>
+    <string name="develop_name">이름 : 김희준</string>
+</resources>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_noise"
+    android:id="@+id/fl_noise"
+    tools:context=".fl_noise">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+      android:orientation="vertical">
+
+
+   <TextView
+       android:id="@+id/context"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="잠자려는 나에게 편안한 소리가 필요할때.."
+       android:layout_margin="8dp"
+       android:textSize="17sp"
+       android:textColor="@color/white"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_margin="8dp"
+          app:cardCornerRadius="10dp"
+          app:cardBackgroundColor="#50000000">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bird"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="자연속 새 소리" />
+
+            <SeekBar
+                android:id="@+id/bird_seek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0" />
+
+         </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_margin="8dp"
+          app:cardCornerRadius="10dp"
+          app:cardBackgroundColor="#50000000">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/wavepool"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="물결치는 파도 소리" />
+
+            <SeekBar
+                android:id="@+id/wavepool_seek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:clickable="false"
+                android:progress="0" />
+
+         </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+
+
+
+   </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:layout_margin="8dp"
+             app:cardCornerRadius="10dp"
+             app:cardBackgroundColor="#50000000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="150dp"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/bonfire"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:textSize="18sp"
+                   android:textColor="@color/white"
+                   android:text="잔잔한 모닥불 소리" />
+
+               <SeekBar
+                   android:id="@+id/bonfire_seek"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:max="100"
+                   android:progress="0" />
+
+            </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:layout_margin="8dp"
+             app:cardCornerRadius="10dp"
+             app:cardBackgroundColor="#50000000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="150dp"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/rain"
+                   tools:ignore="ImageContrastCheck" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:textSize="18sp"
+                   android:textColor="@color/white"
+                   android:text="비 내리는 소리" />
+
+               <SeekBar
+                   android:id="@+id/rain_seek"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:max="100"
+                   android:progress="0" />
+
+            </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:layout_margin="8dp"
+             app:cardCornerRadius="10dp"
+             app:cardBackgroundColor="#50000000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="150dp"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/small_river"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:textSize="18sp"
+                   android:textColor="@color/white"
+                   android:text="작은 시냇물 소리" />
+
+               <SeekBar
+                   android:id="@+id/s_river_seek"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:max="100"
+                   android:progress="0" />
+
+            </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:layout_margin="8dp"
+             app:cardCornerRadius="10dp"
+             app:cardBackgroundColor="#50000000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="150dp"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/bg2"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:textSize="18sp"
+                   android:textColor="@color/white"
+                   android:text=" " />
+
+               <SeekBar
+                   android:id="@+id/ex_seek"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:max="100"
+                   android:progress="0" />
+
+            </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+
+
+      </LinearLayout>
+
+   </LinearLayout>
+
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:id="@+id/fab_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="end|bottom"
+       android:layout_margin="16dp"
+       app:backgroundTint="@color/design_default_color_primary"
+       android:src="@drawable/add_music"
+       tools:ignore="SpeakableTextPresentCheck" />
+
+
+</FrameLayout>

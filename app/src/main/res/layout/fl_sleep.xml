@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fl_sleep"
+    android:background="@drawable/bg_gradient"
+    tools:context=".fl_sleep">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/gray"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="수면 전, 가벼운 스트레칭과 함께 \n편안한 좋은 밤 되세요 " />
+
+            <TextView
+                android:id="@+id/recom_sleeptime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/orance"
+                android:text="권장 수면량 :" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="center"
+                android:scaleX="1.2"
+                android:scaleY="1.3"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                app:lottie_rawRes="@raw/cat"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sleep_tracker"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="수면 준비하기" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/recen_info"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#a3000000"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:text="최근 수면점수 / 정보"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.dinuscxj.progressbar.CircleProgressBar
+                            android:id="@+id/circle_score"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center"
+                            app:line_count="30"
+                            app:progress_start_color="@color/orance"
+                            app:progress_end_color="@color/purple_200"
+                            app:progress_background_color="@color/light_naby"
+                            app:progress_shader="radial"
+                            app:progress_stroke_cap="round"
+                            app:progress_style="solid_line"
+                            app:progress_stroke_width="12dp"
+                            app:progress_text_size="35sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:text="💤 수면 시간  >"
+                                android:textColor="@color/white" />
+                            <TextView
+                                android:id="@+id/total_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:text="1시간 23분"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:text="🔈 평균 소음량  >"
+                                android:textColor="@color/white" />
+                            <TextView
+                                android:id="@+id/avg_dB"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:text="0db"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/slp_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:text="아직 적절한 수면데이터가 발견되지 않았습니다 충분한 휴식을 통해 데이터를 쌓아보세요"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/stat2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                app:cardBackgroundColor="#a3000000"
+                app:cardCornerRadius="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="주간 수면시간 그래프 (단위 : 시간)"
+                    android:textColor="@color/white" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/weekday_chart"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

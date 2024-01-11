@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="수면알람" />
+
+    <item
+        android:id="@+id/sleep"
+        android:icon="@drawable/sleep_ready"
+        android:title="수면준비" />
+
+    <item
+        android:id="@+id/noise_select"
+        android:icon="@drawable/sound_bt"
+        android:title="백색소음" />
+
+    <item
+        android:id="@+id/uid"
+        android:icon="@drawable/uid_set"
+        android:title="사용자" />
+
+</menu>

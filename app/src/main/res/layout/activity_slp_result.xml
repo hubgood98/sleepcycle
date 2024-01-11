@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".slp_result">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="수면 기록결과"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/recen_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:text="녹음시간"/>
+
+    <TextView
+        android:id="@+id/shk_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:text="shaking count"/>
+
+    <TextView
+        android:id="@+id/total_wait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:text="wake up"/>
+
+    <TextView
+        android:id="@+id/total_low"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:text="low sleep"/>
+
+    <TextView
+        android:id="@+id/total_deep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"/>
+
+
+
+    <com.github.mikephil.charting.charts.HorizontalBarChart
+        android:id="@+id/chart1"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/total_de1ep"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="오늘 수면에 대한 만족도는 어떠셨나요?"
+        android:textSize="23sp"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/dark_naby"
+        android:text="선택해주신 데이터를 참고로 다음 수면시간 활용에 도움이 됩니다"
+        android:textSize="13sp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/bad"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="🙁\n 별로에요"/>
+
+        <RadioButton
+            android:id="@+id/soso"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="🤔\n 그럭저럭"/>
+
+        <RadioButton
+            android:id="@+id/nice"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="😆\n 좋아요"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="확인"/>
+
+</LinearLayout>

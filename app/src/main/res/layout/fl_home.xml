@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fl_home"
+    tools:context=".fl_home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/jin_naby">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleX="2.5"
+            android:scaleY="2.5"
+            app:lottie_rawRes="@raw/night_moon"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="이 시간부터 잠을 자게된다면... 😴"/>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/light_naby"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@color/deep_blue"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tx1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="1\nCycle"
+                    android:textAlignment="center"
+                    android:textColor="@color/milk"
+                    android:textSize="80px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/cycle1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/add_time" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="1h 45m"
+                    android:textColor="@color/milk"
+                    android:textAlignment="center"
+                    android:textSize="50px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/c_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="00:00"
+                android:textAlignment="center"
+                android:textColor="@color/milk"
+                android:textSize="50sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/light_naby"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@color/deep_blue"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tx2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="2\nCycle"
+                    android:textAlignment="center"
+                    android:textColor="@color/milk"
+                    android:textSize="80px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/cycle2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/add_time" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="3h 15m"
+                    android:textColor="@color/milk"
+                    android:textAlignment="center"
+                    android:textSize="50px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/c_txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="00:00"
+                android:textAlignment="center"
+                android:textColor="@color/milk"
+                android:textSize="50sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/light_naby"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@color/deep_blue"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tx3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="3\nCycle"
+                    android:textAlignment="center"
+                    android:textColor="@color/milk"
+                    android:textSize="80px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/cycle3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/add_time" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="4h 45m"
+                    android:textColor="@color/milk"
+                    android:textAlignment="center"
+                    android:textSize="50px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/c_txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="00:00"
+                android:textAlignment="center"
+                android:textColor="@color/milk"
+                android:textSize="50sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card4"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/light_naby"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@color/deep_blue"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tx4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="4\nCycle"
+                    android:textAlignment="center"
+                    android:textColor="@color/milk"
+                    android:textSize="80px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/cycle4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/add_time" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="6h 15m"
+                    android:textColor="@color/milk"
+                    android:textAlignment="center"
+                    android:textSize="50px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/c_txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="00:00"
+                android:textAlignment="center"
+                android:textColor="@color/milk"
+                android:textSize="50sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card5"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/light_naby"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@color/deep_blue"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tx5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="5\nCycle"
+                    android:textAlignment="center"
+                    android:textColor="@color/milk"
+                    android:textSize="80px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/cycle5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/add_time" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="7h 45m"
+                    android:textColor="@color/milk"
+                    android:textAlignment="center"
+                    android:textSize="50px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/c_txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="00:00"
+                android:textAlignment="center"
+                android:textColor="@color/milk"
+                android:textSize="50sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>
